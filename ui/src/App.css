@@ -1,0 +1,7 @@
+iframe{
+    pointer-events: none !important;
+}
+
+body{
+    overflow-x: none;
+}
