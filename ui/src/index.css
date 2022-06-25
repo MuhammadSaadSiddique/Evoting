@@ -1,4 +1,4 @@
-
+/* 
 html{
     height: 100%;
 }
@@ -9,4 +9,8 @@ body{
 
 #root{
     height: 100%;
-}
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
