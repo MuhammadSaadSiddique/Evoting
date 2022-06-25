@@ -1,5 +1,5 @@
 {
-  "name": "react-app",
+  "name": "evote",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -61,5 +61,9 @@
     "test": "test"
   },
   "author": "saad",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [
+    "e",
+    "voting"
+  ]
 }
