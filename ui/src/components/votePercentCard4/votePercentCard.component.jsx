@@ -11,11 +11,11 @@ export function VotePercentCard4() {
             <h1 className="votePercentCard__title">Zarmeena</h1>
           </Grid>
           <Grid item xs={2}>
-            <h1 className="votePercentCard__title votePercentCard__percent">35%</h1>
+            <h1 className="votePercentCard__title votePercentCard__percent">25%</h1>
           </Grid>
-          <ProgressBar value={35} />
+          <ProgressBar value={25} />
         </Grid>
-        <p className="votePercentCard__votes">3,500 votes</p>
+        <p className="votePercentCard__votes">2,500 votes</p>
       </div>
     );
 }
