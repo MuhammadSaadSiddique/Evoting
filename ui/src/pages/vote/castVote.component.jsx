@@ -45,6 +45,7 @@ function CastVote() {
                 // get account address
                 const accounts = await web3.eth.getAccounts()
                 setAccount(accounts[0])
+                //fetch()
             }
             catch(err){
                 alert(err.message)
@@ -57,19 +58,31 @@ function CastVote() {
 
     loadProvider()
 }, [])
+const fetch = async() => {
 
+    try{
+        let optionse= await contract.methods.candidates().call({
+            from: account,
+        })
+        alert("res="+optionse)
+    }
+    catch(err){
+        alert(err.message)
+    }
+}
 // cast vote
 const castVote = async() => {
 
-    alert("You have been credited with 100 coins for voting")
+   
 
     
     try{
         await contract.methods.castVote(64, 23).send({
             from: account,
+        }).then(() => {
+         alert("You have been credited with 100 coins for voting")
         })
 
-         alert("Election was created successfully!")
     }
     catch(err){
         alert(err.message)

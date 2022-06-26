@@ -48,12 +48,10 @@ function AvailableElections() {
     const availableElections = async() => {
 
     try{
-        await contract.methods.totalElections().send({
+      let res= await contract.methods.elections().call({
             from: account,
-        }).then(res => {
-    alert("Election was created successfully!",res)
         })
-
+        alert("Total no of elections="+res)
          
     }
     catch(err){
@@ -74,7 +72,7 @@ const formHandler = (event) => {
                     <Grid item>
                         <h1 className="availableElections__content-title">Available Elections</h1>
                         
-            <Button className="createElection__button" handleClick={formHandler}>Fetch Elections</Button>
+            {/* <Button className="createElection__button" handleClick={formHandler}>Fetch Elections</Button> */}
                     </Grid>
                     {/* <Grid item style={{ marginBottom: '50px' }}>menu here</Grid> */}
                 </Grid>
