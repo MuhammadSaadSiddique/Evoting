@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.1;
 
-contract Ballox {
-
+contract Greeter {
     address owner;
 
     mapping(uint256 => Election) public elections;
@@ -20,6 +19,7 @@ contract Ballox {
         uint256 candidate_id;
         uint256 candidate_electionId;
         string candidate_name;
+        string candidate_party;
         uint256 candidate_votes;
     }
 
@@ -37,7 +37,7 @@ contract Ballox {
     }
 
     // this function creates a new election
-    function createElection(string memory _election_name, string[] memory _candidates) external onlyOwner {
+    function createElection(string memory _election_name, string[] memory _candidates,string[] memory _party) external onlyOwner {
 
         uint election_id = uint(keccak256(abi.encodePacked(block.timestamp,block.difficulty, msg.sender))) % 1000;
 
@@ -48,7 +48,7 @@ contract Ballox {
 
             uint candidate_id = uint(keccak256(abi.encodePacked(block.timestamp,block.difficulty, msg.sender))) % 1000 + (i+2);
 
-            candidates[candidate_id] = Candidate(candidate_id, election_id, _candidates[i], 0);
+            candidates[candidate_id] = Candidate(candidate_id, election_id, _candidates[i],_party[i], 0);
             candidateIds.push(candidate_id);
 
         }   
@@ -93,6 +93,4 @@ contract Ballox {
         return candidateIds.length;
         
     }
-    
 }
-

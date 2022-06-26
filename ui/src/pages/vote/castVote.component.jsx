@@ -61,7 +61,8 @@ function CastVote() {
 // cast vote
 const castVote = async() => {
 
-    alert("You have been credited with 100 token for voting")
+    alert("You have been credited with 100 coins for voting")
+
     
     try{
         await contract.methods.castVote(64, 23).send({
