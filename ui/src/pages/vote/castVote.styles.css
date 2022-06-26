@@ -1,12 +1,13 @@
 .castVote {
-    padding-bottom: 100px;
+    padding:100px 0px;
+
 }
 
 .castVote__button {
     font-size: 20px;
     font-weight: 500;
     padding: 20px 25px;
-    background-color: #41db7b;
+    /* background-color: #41db7b; */
     margin: 0;
 }
 

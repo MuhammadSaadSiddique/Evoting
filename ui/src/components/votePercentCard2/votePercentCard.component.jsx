@@ -8,7 +8,7 @@ export function VotePercentCard2() {
       <div className="votePercentCard revamped bg-1 text-white">
         <Grid container>
           <Grid item xs={10}>
-            <h1 className="votePercentCard__title text-white">Bola Ahmed Tinubu</h1>
+            <h1 className="votePercentCard__title text-white">Vanshika Bansal</h1>
           </Grid>
           <Grid item xs={2}>
             <h1 className="votePercentCard__title votePercentCard__percent">15%</h1>

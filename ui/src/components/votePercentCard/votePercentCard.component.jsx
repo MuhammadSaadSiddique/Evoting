@@ -5,10 +5,10 @@ import './votePercentCard.styles.css'
 export function VotePercentCard() {
 
     return (
-      <div className="votePercentCard revamped">
+      <div className="votePercentCard revamped bg-1">
         <Grid container>
           <Grid item xs={10}>
-            <h1 className="votePercentCard__title">Peter Obi</h1>
+            <h1 className="votePercentCard__title">Kanishak Chaurasia</h1>
           </Grid>
           <Grid item xs={2}>
             <h1 className="votePercentCard__title votePercentCard__percent">40%</h1>

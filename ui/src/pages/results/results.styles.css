@@ -1,6 +1,6 @@
 .results {
     width: 100%;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .results__container {
@@ -16,7 +16,7 @@
 .results__vote-count-container {
     width: 100%;
     padding: 40px 25px;
-    background-color: white;
+    /* background-color: transparent; */
     box-sizing: border-box;
     margin-bottom: 50px;
     text-align: center;
@@ -24,12 +24,12 @@
     font-size: 22px;
     font-weight: bold;
     border-radius: 10px;
-    box-shadow: 0px 10px 20px 5px rgb(233, 235, 243);
+    /* box-shadow: 0px 10px 20px 5px rgb(233, 235, 243); */
 }
 
 .results__vote-count {
     font-size: 70px;
-    color: black;
+    color: white;
     margin-top: 30px;
 }
 
@@ -38,7 +38,7 @@
     font-weight: 500;
     padding: 20px 25px;
     width: 100%;
-    background-color: #41db7b;
+    /* background-color: #fff; */
     margin: 0;
 }
 
