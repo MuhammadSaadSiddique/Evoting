@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import balloxLogo from '../../assets/icons/balloxLogo.png'
 import { Button } from '../button/button.component'
 import './header.styles.css'
+import {Sidebar} from "./sidebar.component"
 import Web3 from "web3"
 const Header = () => {
     const { pathname } = useLocation()
@@ -72,7 +73,7 @@ const Header = () => {
                     <Button className='blue-glassmorphism' handleClick={connectWallet}>Connect Wallet</Button>
                 }
             </div>
-            {/* </header> */}
+            <Sidebar />
         </div>
 
     )

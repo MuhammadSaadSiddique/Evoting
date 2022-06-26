@@ -50,15 +50,16 @@ radio button
 .radioButton {
     border-radius: 10px;
     padding: 20px;
-    background-color: white;
+    background-color: transparent;
     box-sizing: border-box;
     position: relative;
     cursor: pointer;
-    box-shadow: 0px 10px 20px 8px rgb(233, 235, 243);
+    /* box-shadow: 0px 10px 20px 8px rgb(233, 235, 243); */
     transition: 200ms linear all;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+    /* color:white; */
 }
 
 .radioButton:hover {
@@ -79,7 +80,7 @@ radio button
 .radioButton__text {
     font-size: 22px;
     font-weight: bold;
-    color: black !important;
+    /* color: black !important; */
 }
 
 .radioButton__radio-image {

@@ -38,10 +38,10 @@ export function RadioButton({ selected, handleClick, name }) {
     return (
         <div 
             onClick={handleClick} 
-            className={`radioButton ${selected ? 'radioButton__selected' : ''}`}
+            className={`radioButton ${selected ? 'radioButton__selected white-glassmorphism' : 'white-glassmorphism'}`}
         >
             { selected 
-                ? <img src={selectedIcon} alt="" className="radioButton__radio  radioButton__radio-image" />
+                ? <img src={selectedIcon} alt="" className="radioButton__radio white-glassmorphism radioButton__radio-image" />
                 : <div className="radioButton__radio" />
             }
             

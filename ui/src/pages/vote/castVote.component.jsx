@@ -76,7 +76,7 @@ const castVote = async() => {
 }
 
     return (
-        <div className="castVote revamped bg-1">
+        <div className="castVote revamped ">
             <Grid container columns={18}>
                 <Grid item xs={2} md={4} />
 
@@ -90,6 +90,7 @@ const castVote = async() => {
                             value={option.value}
                             selected={option.value === selection}
                             handleClick={() => handleClick(option.value)}
+                            className='transparent'
                         />
                     ))}
 
