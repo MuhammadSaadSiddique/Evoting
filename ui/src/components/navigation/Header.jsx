@@ -48,11 +48,13 @@ const Header = () => {
 
     }
     return (
-        // <div className='header '>
-            <header className='header '>
+        <div className='headr  '>
+            {/* <header className='header  '> */}
             <div className='header__logo'>
                 <Link to='/'>
-                    <img src={balloxLogo} alt="logo" className="p-10 cursor-pointer" width={200} />
+                    <div>
+                        <img src={balloxLogo} alt="logo" className="p-10 cursor-pointer " width={200} />
+                    </div>
                 </Link>
             </div>
             <div className="header__center revamped">
@@ -64,15 +66,15 @@ const Header = () => {
                 </Link>
             </div>
             <div>
-            {address ?
-                    <Button>{address.slice(0, 3)}...{address.slice(38)}</Button>
+                {address ?
+                    <Button className='blue-glassmorphism'>{address.slice(0, 3)}...{address.slice(38)}</Button>
                     :
-                    <Button handleClick={connectWallet}>Connect Wallet</Button>
+                    <Button className='blue-glassmorphism' handleClick={connectWallet}>Connect Wallet</Button>
                 }
             </div>
-            </header>
-           
-      
+            {/* </header> */}
+        </div>
+
     )
 }
 

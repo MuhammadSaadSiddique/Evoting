@@ -6,7 +6,7 @@ export function VoteCard({ removeEffect, link }) {
 
     const component = 
     
-    <div className={`voteCard ${removeEffect ? 'voteCard__removeEffect bg-1 rounded-2xl ' : 'rounded-xl bg-1'}`}>
+    <div className={`voteCard ${removeEffect ? 'voteCard__removeEffect bg-1 rounded-2xl ' : 'rounded-2xl bg-1'}`}>
         <Highlighter />
         { !removeEffect && <VoteCount /> }
         <h1 className="voteCard__title revamped ">2023 Presidential Election</h1>

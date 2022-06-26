@@ -1,11 +1,12 @@
-.header {
+.headr {
     /* height: 50px; */
-    /* display: flex; */
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    background-color:transparent;
+    /* z-index: 100; */
     font-size: 18px;
-    padding:0px 40px;
+    padding:20px 40px;
     margin-bottom: 40px;
     /* background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% ); */
 
