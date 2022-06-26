@@ -11,11 +11,11 @@ import { Link } from 'react-router-dom'
 function Results() {
 
     return (
-      <div className="results">
+      <div className="results revamped ">
         <div className="results__container">
           <Grid container alignItems="flex-end">
             <Grid item xs={12} md={7}>
-              <div className="results__inner-container">
+              <div className="results__inner-container ">
                 <VoteCard removeEffect />
 
                 <VotePercentCard />
@@ -26,14 +26,14 @@ function Results() {
             </Grid>
 
             <Grid item xs={12} md={5}>
-              <div className="results__inner-container">
-                <div className="results__vote-count-container">
-                  <span>Votes</span>
+              <div className="results__inner-container text-white revamped ">
+                <div className="results__vote-count-container eth-card white-glassmorphism">
+                  <span className='text-white'>Votes</span>
                   <br />
-                  <h1 className="results__vote-count">10,000</h1>
+                  <h1 className="results__vote-count text-white">10,000</h1>
                 </div>
                 <Link to="/cast-vote">
-                  <Button className="results__button">Cast your vote</Button>
+                  <Button className="results__button blue-glassmorphism hover:white-glassmorphism pointer revamped">Cast your vote</Button>
                 </Link>
               </div>
             </Grid>

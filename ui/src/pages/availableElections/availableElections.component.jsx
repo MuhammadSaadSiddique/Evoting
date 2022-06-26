@@ -8,7 +8,7 @@ function AvailableElections() {
         <Grid container columns={18}>
             <Grid item xs={2} md={4} />
 
-            <Grid item xs={14} md={10} className="availableElections__content">
+            <Grid item xs={14} md={10} className="availableElections__content revamped">
                 <Grid item container justifyContent="space-between" alignItems="baseline">
                     <Grid item>
                         <h1 className="availableElections__content-title">Available Elections</h1>
