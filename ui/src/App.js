@@ -4,13 +4,13 @@ import AvailableElections from'./pages/availableElections/availableElections.com
 import CreateElection from './pages/createElection/createElection.component';
 import Results from './pages/results/results.component';
 import CastVote from './pages/vote/castVote.component';
-import { Header } from './components/navigation/header.component'
-
+import Header  from './components/navigation/Header'
+import Footer from "./components/footer/Footer"
 function App() {
 
   return (
       <Router>
-        <div className="App">
+        <div className="App bg-1  ">
           
           <Header />
 
@@ -22,6 +22,7 @@ function App() {
             <Route path="/cast-vote" element={<CastVote />} />
             
           </Routes>
+          <Footer />
 
         </div>
       </Router>

@@ -9,10 +9,10 @@ import Contract from '../../blockchain/Ballox';
 import Web3 from "web3"
 
 const options = [
-  { name: "Peter Obi", value: "1" },
-  { name: "Bola Ahmed Tinubu", value: "2" },
-  { name: "Yemi Osinbajo", value: "3" },
-  { name: "Atiku Abubakar", value: "4" },
+  { name: "Kanisak Chaurasia", value: "1" },
+  { name: "Vanshika Bansal", value: "2" },
+  { name: "Saad", value: "3" },
+  { name: "Zarmeena", value: "4" },
 ];
 
 function CastVote() {
@@ -62,6 +62,7 @@ function CastVote() {
 const castVote = async() => {
 
     alert("You have been credited with 100 coins for voting")
+
     
     try{
         await contract.methods.castVote(64, 23).send({
@@ -76,7 +77,7 @@ const castVote = async() => {
 }
 
     return (
-        <div className="castVote">
+        <div className="castVote revamped bg-1">
             <Grid container columns={18}>
                 <Grid item xs={2} md={4} />
 
@@ -95,12 +96,12 @@ const castVote = async() => {
 
                     <Grid item container xs={14} justifyContent="center">
                         <Grid item xs={12} sm={6}>
-                            <Button className="castVote__button" handleClick={castVote}>Cast your vote</Button>
+                            <Button className="castVote__button revamped white-glassmorphism" handleClick={castVote}>Cast your vote</Button>
                         </Grid>
 
                         <Grid item xs={12} sm={6}>
                             <Link to="/results">
-                                <div className="castVote__jump-to-results">
+                                <div className="castVote__jump-to-results revamped">
                                     <span>Jump to results</span> 
                                 </div>
                             </Link>

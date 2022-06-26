@@ -6,8 +6,8 @@
 .form__input {
     width: 100%;
     box-sizing: border-box;
-    background: white;
-    color: black;
+    background: transparent;
+    color: white;
     height: 60px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.06);
     border: none;
@@ -28,7 +28,7 @@
 }
 
 .form__input::placeholder {
-    color: gray;
+    color: bisque;
     font-weight: 500;
 }
 

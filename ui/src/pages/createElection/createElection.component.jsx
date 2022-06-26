@@ -76,7 +76,7 @@ const createElection = async() => {
 
     
     return (
-      <div className="createElection">
+      <div className="createElection revamped">
         <Grid container columns={18}>
           <Grid item xs={2} md={4} />
 
@@ -98,7 +98,7 @@ const createElection = async() => {
               <Input label="Add candidate 4" placeholder="add a name" handleChange={(event) => setName4(event.target.value)} />
               <Input label="Add candidate 4 Party Name" placeholder="add a party name" handleChange={(event) => setPartyName4(event.target.value)} />
 
-            <Button className="createElection__button" handleClick={formHandler}>
+            <Button className="createElection__button revamped white-glassmorphism" handleClick={formHandler}>
               Add a candidate{" "}
             </Button>
           </Grid>

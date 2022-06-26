@@ -6,10 +6,10 @@ export function Input({ half, label, handleChange, ...props }) {
 
     return (
         <Grid item xs={half ? 9 : 18}>
-            <label className="form__label" htmlFor="poll option">{label}</label>
+            <label className="form__label revamped" htmlFor="poll option">{label}</label>
             <input 
                 type="text" 
-                className="form__input" 
+                className="form__input white-glassmorphism revamped" 
                 onChange={handleChange}
                 { ...props }
             />
@@ -22,9 +22,9 @@ export function TextArea({ half, label, handleChange, ...props }) {
 
     return (
         <Grid item xs={half ? 9 : 18}>
-            <label htmlFor="poll option" className="form__label">{label}</label>
+            <label htmlFor="poll option" className="form__label revamped">{label}</label>
             <textarea
-                className="form__input form__textarea" 
+                className="form__input form__textarea revamped white-glassmorphism" 
                 onChange={handleChange}
                 { ...props }
             />
@@ -41,11 +41,11 @@ export function RadioButton({ selected, handleClick, name }) {
             className={`radioButton ${selected ? 'radioButton__selected' : ''}`}
         >
             { selected 
-                ? <img src={selectedIcon} alt="" className="radioButton__radio radioButton__radio-image" />
+                ? <img src={selectedIcon} alt="" className="radioButton__radio  radioButton__radio-image" />
                 : <div className="radioButton__radio" />
             }
             
-            <div className="radioButton__text">{ name }</div>
+            <div className="radioButton__text revamped">{ name }</div>
         </div>
     )
 }
