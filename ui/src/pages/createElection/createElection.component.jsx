@@ -80,7 +80,7 @@ const createElection = async() => {
         <Grid container columns={18}>
           <Grid item xs={2} md={4} />
 
-          <Grid item xs={14} md={10} className="availableElections__content">
+          <Grid item xs={14} md={10} className="createElection__content">
             <h1 className="createElection__content-title">Schedule an Election</h1>
             <p className="createElection__content-subtitle">Complete the fields below to setup your Election</p>
 

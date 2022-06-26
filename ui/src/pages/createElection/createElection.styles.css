@@ -1,6 +1,9 @@
 .createElection {
     padding-bottom: 50px;
 }
+.createElection__content {
+    height:200vh;
+}
 
 .createElection__content-title {
     margin: 30px auto 20px 0;
