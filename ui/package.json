@@ -33,7 +33,7 @@
     "build": "react-scripts  build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile": "solcjs --abi --include-path node_modules/ --base-path . src/blockchain/contracts/Ballox.sol --output-dir src/blockchain/build"
+    "compile": "solcjs --abi --include-path node_modules/ --base-path . src/blockchain/contracts/Greeter.sol --output-dir src/blockchain/build"
   },
   "eslintConfig": {
     "extends": "react-app"

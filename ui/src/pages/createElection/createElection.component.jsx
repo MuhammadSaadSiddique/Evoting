@@ -17,6 +17,11 @@ function CreateElection() {
   const [name2, setName2] = useState()
   const [name3, setName3] = useState()
   const [name4, setName4] = useState()
+  
+  const [partyname1, setPartyName1] = useState()
+  const [partyname2, setPartyName2] = useState()
+  const [partyname3, setPartyName3] = useState()
+  const [partyname4, setPartyName4] = useState()
 
   // load provider
   useEffect(() => {
@@ -56,8 +61,9 @@ const formHandler = (event) => {
 const createElection = async() => {
 
     let candidates = [name1, name2, name3, name4]
+    let partyNames = [partyname1, partyname2, partyname3, partyname4]
     try{
-        await contract.methods.createElection(title, candidates).send({
+        await contract.methods.createElection(title, candidates,partyNames).send({
             from: account,
         })
 
@@ -81,12 +87,16 @@ const createElection = async() => {
             <TextArea label="Add the title of your election" placeholder="add a good title for the election you are about to schedule"  handleChange={(event) => setTitle(event.target.value)} />
 
               <Input label="Add candidate 1" placeholder="add a name" handleChange={(event) => setName1(event.target.value)} />
+              <Input label="Add candidate 1 Party Name" placeholder="add a party name" handleChange={(event) => setPartyName1(event.target.value)} />
 
               <Input label="Add candidate 2" placeholder="add a name" handleChange={(event) => setName2(event.target.value)} />
+              <Input label="Add candidate 2 Party Name" placeholder="add a party name" handleChange={(event) => setPartyName2(event.target.value)} />
 
               <Input label="Add candidate 3" placeholder="add a name" handleChange={(event) => setName3(event.target.value)} />
+              <Input label="Add candidate 3 Party Name" placeholder="add a party name" handleChange={(event) => setPartyName3(event.target.value)} />
 
               <Input label="Add candidate 4" placeholder="add a name" handleChange={(event) => setName4(event.target.value)} />
+              <Input label="Add candidate 4 Party Name" placeholder="add a party name" handleChange={(event) => setPartyName4(event.target.value)} />
 
             <Button className="createElection__button" handleClick={formHandler}>
               Add a candidate{" "}
