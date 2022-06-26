@@ -8,6 +8,7 @@
     box-shadow: 0px 10px 44px 10px rgb(233, 235, 243);
     transition: 200ms linear all;
     margin-bottom: 50px;
+    color: white;
 }
 
 .votePercentCard:hover {
@@ -18,7 +19,8 @@
 
 .votePercentCard__title {
     margin: 20px auto 10px 0;
-    color: rgb(70, 68, 68);
+    /* color: rgb(70, 68, 68); */
+    color: white;
 }
 
 .votePercentCard__votes {

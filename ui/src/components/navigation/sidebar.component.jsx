@@ -57,7 +57,7 @@ export function Sidebar({ pathname }) {
                             </ListItem>
                         </Link>
                     ))}
-                    <a href="https://ballox-by-team-wonder.github.io/Ballox-Web/" target="_blank">
+                    <a href="https://ballox-by-team-wonder.github.io/Ballox-Web/" target="_blank" rel='noreferrer'>
                         <ListItem
                                 button
                                 style={{
@@ -76,7 +76,7 @@ export function Sidebar({ pathname }) {
     );
 
     return (
-        <div className="sidebar">
+        <div className="sidebar revamped">
             <IconButton onClick={toggleDrawer('right', true)}>
                 <MenuIcon sx={{ color: '#090909', fontSize: '30px' }} />
             </IconButton>

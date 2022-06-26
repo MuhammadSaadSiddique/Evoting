@@ -5,7 +5,7 @@ import './votePercentCard.styles.css'
 export function VotePercentCard() {
 
     return (
-      <div className="votePercentCard">
+      <div className="votePercentCard revamped">
         <Grid container>
           <Grid item xs={10}>
             <h1 className="votePercentCard__title">Peter Obi</h1>

@@ -16,16 +16,22 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         list-style: none;
         box-sizing: border-box;
-        font-family: 'Nunito', sans-serif;
+        /* font-family: 'Nunito', sans-serif; */
         text-decoration: none;
     }
 
     body{
-        background-color: var(--neutral-light);
+        /* background-color: var(--neutral-light); */
+        /* background-image: linear-gradient(to right, #141e30, #243b55); */
+        background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+
+        /* background-color: #000; */
         color: white;
         font-size: 1.2rem;
     }
-
+header{
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+}
     a{
         color: inherit;
     }

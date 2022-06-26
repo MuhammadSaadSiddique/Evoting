@@ -6,18 +6,21 @@ export function VoteCard({ removeEffect, link }) {
 
     const component = 
     
-    <div className={`voteCard ${removeEffect ? 'voteCard__removeEffect' : ''}`}>
+    <div className={`voteCard ${removeEffect ? 'voteCard__removeEffect bg-1 rounded-2xl ' : 'rounded-xl bg-1'}`}>
         <Highlighter />
         { !removeEffect && <VoteCount /> }
-        <h1 className="voteCard__title">2023 Presidential Election</h1>
-        <p className="voteCard__time">Created 1 day ago</p>
+        <h1 className="voteCard__title revamped ">2023 Presidential Election</h1>
+        <p className="voteCard__time revamped ">Created 1 day ago</p>
     </div>
 
     return !link ? (
         component 
     ) : (
         <Link to={link}>
-            { component }
+            <div className='bg-1'>
+                 { component }
+            </div>
+           
         </Link>
     )
 }
@@ -25,7 +28,7 @@ export function VoteCard({ removeEffect, link }) {
 function Highlighter() {
     
     return (
-        <span className="highlighter">
+        <span className="highlighter bg-1 revamped">
             Live Election
         </span>
     )
@@ -34,6 +37,6 @@ function Highlighter() {
 function VoteCount() {
 
     return (
-        <span className="voteCount">10,000 Votes</span>
+        <span className="voteCount bg-1 revamped">10,000 Votes</span>
     )
 }
