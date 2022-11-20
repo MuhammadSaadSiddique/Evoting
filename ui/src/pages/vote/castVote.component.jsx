@@ -9,10 +9,10 @@ import Contract from '../../blockchain/Ballox';
 import Web3 from "web3"
 
 const options = [
-  { name: "Kanisak Chaurasia", value: "1" },
-  { name: "Vanshika Bansal", value: "2" },
+  { name: "Ilsa Afzal", value: "1" },
+  { name: "Shaheer Khan", value: "2" },
   { name: "Saad", value: "3" },
-  { name: "Zarmeena", value: "4" },
+  { name: "Usama Zafar", value: "4" },
 ];
 
 function CastVote() {

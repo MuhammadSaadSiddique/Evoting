@@ -8,14 +8,14 @@ export function VotePercentCard() {
       <div className="votePercentCard revamped bg-1">
         <Grid container>
           <Grid item xs={10}>
-            <h1 className="votePercentCard__title">Kanishak Chaurasia</h1>
+            <h1 className="votePercentCard__title">Ilsa Afzal</h1>
           </Grid>
          <Grid item xs={2}>
-            <h1 className="votePercentCard__title votePercentCard__percent">25%</h1>
+            <h1 className="votePercentCard__title votePercentCard__percent">43%</h1>
           </Grid>
-          <ProgressBar value={25} />
+          <ProgressBar value={43} />
         </Grid>
-        <p className="votePercentCard__votes">2,500 votes</p>
+        <p className="votePercentCard__votes">4,300 votes</p>
       </div>
     );
 }
